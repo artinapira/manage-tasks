@@ -39,7 +39,7 @@ export default function HomeScreen() {
   const [search, setSearch] =
     useState("");
 
-  const [filter, setFilter] = useState<"all" | "completed" | "pending">("all");
+  const [filter, setFilter] = useState<"all" | "completed" | "not completed">("all");
 
   const loadTasks = async () => {
     const data = await getTasks();
@@ -91,7 +91,7 @@ export default function HomeScreen() {
       return matchesSearch && task.status;
     }
 
-    if (filter === "pending") {
+    if (filter === "not completed") {
       return matchesSearch && !task.status;
     }
 
@@ -138,11 +138,11 @@ export default function HomeScreen() {
         <TouchableOpacity
           style={[
             styles.filterButton,
-            filter === "pending" &&
+            filter === "not completed" &&
             styles.activeFilter,
           ]}
           onPress={() =>
-            setFilter("pending")
+            setFilter("not completed")
           }
         >
           <Text style={styles.filterText}>
