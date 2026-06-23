@@ -59,6 +59,7 @@ export default function AddTaskScreen() {
     <View style={styles.container}>
       <TextInput
         placeholder="Task title"
+        placeholderTextColor="#000"
         value={title}
         onChangeText={setTitle}
         style={styles.input}
@@ -66,6 +67,7 @@ export default function AddTaskScreen() {
 
       <TextInput
         placeholder="Description"
+        placeholderTextColor="#000"
         value={description}
         onChangeText={setDescription}
         style={styles.input}

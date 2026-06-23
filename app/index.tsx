@@ -102,6 +102,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <TextInput
         placeholder="Search task..."
+        placeholderTextColor="#000"
         value={search}
         onChangeText={setSearch}
         style={styles.search}
@@ -222,6 +223,7 @@ const styles =
       padding: 12,
       borderRadius: 10,
       marginBottom: 15,
+      color: "#000",
     },
 
     filterContainer: {
