@@ -56,5 +56,13 @@ https://jsonplaceholder.typicode.com/todos
 
 The API is used to demonstrate public API consumption
 
+Short Explanation:
+
+This project is a simple task management mobile application developed using React Native, Expo SDK 54 and Typescript
+The application allows users to create, view and delete tasks. Tasks can be marked as completed or not completed and viewed in a dedicated details screen. Local persistence is implemented using AsyncStorage ensuring that tasks remain available after the application is restarted.
+Additional functionality includes task search by title and task filtering based on completion status: All, Completed and Pending. Navigation between screens is handled using Expo Router.
+A public API(JSONPlaceholder) was integrated to demonstrate API consumption as requested in the task requirements. 
+The application was designed with reusable components and a clean user interface while following React Native and TypeScript best practices. 
+
 Author
 Artina Pira
