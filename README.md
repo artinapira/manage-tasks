@@ -55,3 +55,6 @@ API Used:
 https://jsonplaceholder.typicode.com/todos
 
 The API is used to demonstrate public API consumption
+
+Author
+Artina Pira
